@@ -179,6 +179,9 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 
 # Chad Section
 
+<!-- Regrep -->
+* `brew install rg`
+
 <!-- fzf (fuzzy finder) -->
 * `brew install fzf`
 
