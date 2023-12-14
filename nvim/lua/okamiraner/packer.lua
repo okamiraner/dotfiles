@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v1.x',
       requires = {
-          {'neovim/nvim-lspconfig'},
+       {'neovim/nvim-lspconfig'},
           {'williamboman/mason.nvim'},
           {'williamboman/mason-lspconfig.nvim'},
           {'hrsh7th/nvim-cmp'},
