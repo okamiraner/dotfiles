@@ -215,9 +215,3 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
         * [LTeXLS](github.com/valentjn/ltex-ls)
         <!-- Style checker -->
         * [Vale](github.com/errata-ai/vale-ls)
-
-
-# Perv Section
-
-<!-- GHCup (Haskell) -->
-* `curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh`
