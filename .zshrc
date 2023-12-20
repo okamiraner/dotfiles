@@ -66,7 +66,7 @@ alias ls='ls -F -a'
 alias conf='nvim ~/.zshrc'
 alias subl='subl -n'
 alias subl.='subl .'
-alias viconf='nvim ~/.config/nvim'
+alias viconf='cd ~/.config/nvim && nvim . && cd -'
 
 
 # Fuzzy finder completion
