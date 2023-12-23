@@ -55,6 +55,7 @@ alias push='git add . && git commit -m "upd" && git push -u origin HEAD'
 alias hard='git reset --hard origin'
 alias switch='git switch'
 alias fetch='ls | xargs -P10 -I{} git -C {} pull'
+alias tmuxconf='nvim ~/.config/tmux/.tmux.conf'
 
 
 # Aspell aliases
