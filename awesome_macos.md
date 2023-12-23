@@ -179,6 +179,9 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 
 # Chad Section
 
+<!-- tmux (session manager) -->
+* `brew install tmux`
+
 <!-- Regrep -->
 * `brew install rg`
 
