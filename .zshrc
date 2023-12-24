@@ -76,3 +76,9 @@ source $(brew --prefix fzf)/shell/completion.zsh
 
 # Syntax highlighting for zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# tmux
+if [ "$TMUX" = "" ]; then tmux; fi
+eval "$(tmux source ~/.config/tmux/.tmux.conf)"
+
