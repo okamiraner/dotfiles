@@ -10,7 +10,8 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # Pretty prompt
 autoload -U colors && colors
 setopt PROMPT_SUBST
-PS1='%F{red}%13>~>%c%>>%f%B$(__git_ps1 " %s")%b $ '
+PS1='$ '
+#PS1='%F{red}%13>~>%c%>>%f%B$(__git_ps1 " %s")%b $ '
 
 
 # Git autocomplete
