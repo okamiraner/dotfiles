@@ -1,3 +1,8 @@
+vim.opt.conceallevel = 0
+vim.opt.fileencoding = 'utf8'
+
+vim.opt.cursorlineopt = 'number'
+vim.opt.cursorline = true
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = 'number'
@@ -16,3 +21,4 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 
 vim.opt.updatetime = 50
+

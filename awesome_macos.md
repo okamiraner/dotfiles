@@ -176,6 +176,9 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 <!-- Flickr (real photo wallpapers) -->
 * [Flickr](flickr.com/explore)
 
+<!-- Yosevka font -->
+* [Yosefka](typeof.net/Iosevka)
+
 
 # Chad Section
 
@@ -210,6 +213,8 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
     * [Harpoon](github.com/ThePrimeagen/harpoon)
     <!-- Syntax tree -->
     * [Treesitter](github.com/nvim-treesitter/nvim-treesitter)
+    <!-- Visual navigation -->
+    * [Leap](github.com/ggandor/leap.nvim)
     <!-- Color scheme -->
     * [Dracula](github.com/Mofiqul/dracula.nvim)
     <!-- LSP setup -->

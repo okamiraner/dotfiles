@@ -1,3 +1,4 @@
+
 local lsp = require('lsp-zero')
 local lspconfig = require('lspconfig')
 
@@ -63,6 +64,7 @@ lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({buffer = bufnr})
     local opts = {buffer = bufnr}
 
+    vim.keymap.set('n', '<leader>dd', '<cmd>Telescope diagnostics bufnr=0<cr>', opts)
     vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<cr>', opts)
     vim.keymap.set('n', 'gi', '<cmd>Telescope lsp_implementations<cr>', opts)
     vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references<cr>', opts)
