@@ -7,11 +7,16 @@ source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 
+# fxf colors
+export FZF_DEFAULT_OPTS='
+  --color=info:#6272A4,prompt:#6272A4,gutter:-1,pointer:red,bg+:-1,border:#6272A4,hl+:green
+'
+
+
 # Pretty prompt
 autoload -U colors && colors
 setopt PROMPT_SUBST
-PS1='$ '
-#PS1='%F{red}%13>~>%c%>>%f%B$(__git_ps1 " %s")%b $ '
+PS1='%F{red}%13>~>%c%>>%f%B$(__git_ps1 " %s")%b $ '
 
 
 # Git autocomplete
@@ -40,10 +45,6 @@ alias vim='nvim'
 alias vim\ .='nvim .'
 
 
-# Python aliases
-alias python=/opt/homebrew/bin/python3.12
-
-
 # Git aliases
 alias clone='git clone'
 alias status='git status'
@@ -56,7 +57,6 @@ alias push='git add . && git commit -m "upd" && git push -u origin HEAD'
 alias hard='git reset --hard origin'
 alias switch='git switch'
 alias fetch='ls | xargs -P10 -I{} git -C {} pull'
-alias tmuxconf='nvim ~/.config/tmux/.tmux.conf'
 
 
 # Aspell aliases
@@ -69,6 +69,8 @@ alias conf='nvim ~/.zshrc'
 alias subl='subl -n'
 alias subl.='subl .'
 alias viconf='cd ~/.config/nvim && nvim . && cd -'
+alias gitconf='nvim ~/.gitconfig'
+alias tmuxconf='nvim ~/.config/tmux/.tmux.conf'
 
 
 # Fuzzy finder completion
@@ -79,7 +81,13 @@ source $(brew --prefix fzf)/shell/completion.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
+# Python 3 as default
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+
 # tmux
-if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux a || tmux new; fi
 eval "$(tmux source ~/.config/tmux/.tmux.conf)"
 

@@ -5,7 +5,7 @@ vim.opt.cursorlineopt = 'number'
 vim.opt.cursorline = true
 vim.opt.nu = true
 vim.opt.relativenumber = true
-vim.opt.signcolumn = 'number'
+vim.opt.signcolumn = 'yes'
 
 vim.opt.smartindent = true
 vim.opt.expandtab = true
