@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+# spam
+=======
 # spamZZ
+>>>>>>> db3301d (test)
 
 # Homebrew fix
 export PATH="/opt/homebrew/bin:$PATH"
