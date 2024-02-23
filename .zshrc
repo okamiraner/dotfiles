@@ -1,5 +1,3 @@
-# spamZ
-
 # Homebrew fix
 export PATH="/opt/homebrew/bin:$PATH"
 

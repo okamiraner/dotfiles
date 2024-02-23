@@ -1,0 +1,33 @@
+[
+    {
+        "keys": ["j", "j"],
+        "command": "exit_insert_mode",
+        "context":
+        [
+            {
+                "key": "setting.command_mode",
+                "operand": false
+            },
+            {
+                "key": "setting.is_widget",
+                "operand": false
+            }
+        ]
+    },
+    {
+        "keys": ["g", "d"],
+        "command": "lsp_symbol_declaration"
+    },
+    {
+        "keys": ["]", "d"],
+        "command": "lsp_next_diagnostic"
+    },
+    {
+        "keys": ["[", "d"],
+        "command": "lsp_prev_diagnostic"
+    },
+    {
+        "keys": ["r", "n", "d"],
+        "command": "lsp_symbol_rename"
+    }
+]
