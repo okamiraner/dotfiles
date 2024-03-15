@@ -120,6 +120,7 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 
 <!-- LanguageTool (local spellchecker) -->
 * `brew install languagetool`
+
   `brew services start languagetool`
 
 <!-- Vale (style checker) -->
