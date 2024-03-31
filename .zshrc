@@ -1,16 +1,26 @@
-# Homebrew fix
+# Java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+export JAVA_HOME="$(/usr/libexec/java_home)"
+
+
+# Gradle
+export PATH="$PATH:/opt/gradle/gradle-8.7/bin"
+
+
+# Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
+export CPATH="/opt/homebrew/include"
+export LIBRARY_PATH="/opt/homebrew/lib"
+
+
+# zsh-autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 # Git prompt
 source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
-
-
-# fxf colors
-export FZF_DEFAULT_OPTS='
-  --color=info:#6272A4,prompt:#6272A4,gutter:-1,pointer:red,bg+:-1,border:#6272A4,hl+:green
-'
 
 
 # Pretty prompt
@@ -29,8 +39,16 @@ export FZF_DEFAULT_COMMAND='fd --strip-cwd-prefix --hidden --follow'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 source ~/fzf-tab/fzf-tab.plugin.zsh
 
+# fzf colors
+export FZF_DEFAULT_OPTS='
+  --color=info:#6272A4,prompt:#6272A4,gutter:-1,pointer:red,bg+:-1,border:#6272A4,hl+:green
+'
 
-# Vim fu
+# fzf completion
+source $(brew --prefix fzf)/shell/completion.zsh
+
+
+# Vim moves
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 ZVM_INSERT_MODE_CURSOR=$ZVM_CURSOR_BLINKING_BLOCK
 ZVM_NORMAL_MODE_CURSOR=$ZVM_CURSOR_BLINKING_BEAM
@@ -67,17 +85,13 @@ alias check='aspell check'
 alias ls='ls -F -a'
 alias conf='nvim ~/.zshrc'
 alias subl='subl -n'
-alias subl.='subl .'
+alias subl.='subl --launch-or-new-window .'
 alias viconf='cd ~/.config/nvim && nvim . && cd -'
 alias gitconf='nvim ~/.gitconfig'
 alias tmuxconf='nvim ~/.config/tmux/.tmux.conf'
 
 
-# Fuzzy finder completion
-source $(brew --prefix fzf)/shell/completion.zsh
-
-
-# Syntax highlighting for zsh
+# Syntax highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
@@ -85,6 +99,13 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+
+# LLVM
+
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 
 # tmux
