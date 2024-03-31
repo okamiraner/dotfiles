@@ -3,10 +3,10 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 ---
 
 
-# GUI
+## GUI
 
 
-## Common
+### Common
 
 <!-- Browser -->
 * [Firefox](mozilla.org)
@@ -42,7 +42,7 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 * [uBlock Origin](ublockorigin.com)
 
 
-## Dev
+### Dev
 
 <!-- Text editor -->
 * [Sublime Text](sublimetext.com)
@@ -54,7 +54,7 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 * [Docker](docker.com)
 
 
-## Docs
+### Docs
 
 <!-- Diagram editor -->
 * [draw.io](github.com/jgraph/drawio-desktop/releases)
