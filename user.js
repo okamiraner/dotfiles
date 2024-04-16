@@ -122,6 +122,8 @@ user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", fa
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 user_pref("javascript.use_us_english_locale", true);
+user_pref("browser.formfill.enable", false);
+user_pref("browser.urlbar.trending.featureGate", false);
 
 // tweaks
 user_pref("extensions.pocket.enabled", false);
@@ -135,3 +137,5 @@ user_pref("browser.warnOnQuitShortcut", false);
 user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
 user_pref("devtools.editor.keymap", "vim");
 user_pref("browser.search.openintab", true);
+user_pref("browser.translations.enable", false);
+user_pref("browser.urlbar.update2.engineAliasRefresh", true);
