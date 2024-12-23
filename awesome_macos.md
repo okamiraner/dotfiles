@@ -54,12 +54,6 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 * [Docker](docker.com)
 
 
-### Docs
-
-<!-- Diagram editor -->
-* [draw.io](github.com/jgraph/drawio-desktop/releases)
-
-
 # CLI
 
 
@@ -110,10 +104,7 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 * `brew install gawk`
 
 
-### Docs
-
-<!-- AsyncAPI -->
-* `brew install asyncapi`
+### Writing
 
 <!-- Aspell (word-by-word spellchecker) -->
 * `brew install aspell`
@@ -122,9 +113,6 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 * `brew install languagetool`
 
   `brew services start languagetool`
-
-<!-- Vale (style checker) -->
-* `brew install vale`
 
 <!-- Tesseract (OCR) -->
 * `brew install tesseract`
@@ -141,9 +129,6 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 <!-- Redocly (pretty OAS) -->
 * `npm i -g @redocly/cli@latest`
 
-<!-- Mermaid (diagrams-as-code) -->
-* `npm i -g mermaid`
-
 <!-- serve (run a server in the directory) -->
 * `npm i -g serve`
 
@@ -153,20 +138,8 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 <!-- pip (package manager) -->
 * `python -m ensurepip --upgrade`
 
-<!-- NumPy (arrays) -->
-* `pip install numpy`
-
-<!-- Pandas (table data) -->
-* `pip install pandas`
-
-<!-- Scikit-learn (basic ML) -->
-* `pip install -U scikit-learn`
-
 <!-- requests (HTTP support) -->
 * `pip install requests`
-
-<!-- JupyterLab (S-tier Python IDE) -->
-* `pip install jupyterlab`
 
 
 # Customization
@@ -182,9 +155,6 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 
 
 # Chad Section
-
-<!-- tmux (session manager) -->
-* `brew install tmux`
 
 <!-- Regrep -->
 * `brew install rg`
@@ -220,7 +190,3 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
     * [Dracula](github.com/Mofiqul/dracula.nvim)
     <!-- LSP setup -->
     * [LSP Zero](github.com/VonHeikemen/lsp-zero.nvim)
-        <!-- Spellchecker -->
-        * [LTeXLS](github.com/valentjn/ltex-ls)
-        <!-- Style checker -->
-        * [Vale](github.com/errata-ai/vale-ls)
