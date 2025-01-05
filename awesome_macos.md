@@ -1,6 +1,4 @@
----
-title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
----
+# Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 
 
 ## GUI
@@ -31,9 +29,6 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 
 <!-- Media player -->
 * [IINA](iina.io)
-
-<!-- Video calls -->
-* [Zoom](zoom.us)
 
 
 ### Browser extensions
@@ -86,8 +81,17 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 <!-- OpenSSL -->
 * `brew install openssl@3`
 
-<!-- tree (directory tree) -->
-* `brew install tree`
+<!-- Regrep -->
+* `brew install rg`
+
+<!-- fzf (fuzzy finder) -->
+* `brew install fzf`
+
+<!-- fzf tag in completions -->
+* [fxf-tab](github.com/Aloxaf/fzf-tab)
+
+<!-- Zsh Vi Mode -->
+* [Zsh Vi Mode](github.com/jeffreytse/zsh-vi-mode)
 
 
 ## GNU Utilities
@@ -102,9 +106,6 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 
 <!-- Gawk -->
 * `brew install gawk`
-
-
-### Writing
 
 <!-- Aspell (word-by-word spellchecker) -->
 * `brew install aspell`
@@ -150,23 +151,8 @@ title: Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 <!-- Flickr (real photo wallpapers) -->
 * [Flickr](flickr.com/explore)
 
-<!-- Yosevka font -->
-* [Yosefka](typeof.net/Iosevka)
-
-
-# Chad Section
-
-<!-- Regrep -->
-* `brew install rg`
-
-<!-- fzf (fuzzy finder) -->
-* `brew install fzf`
-
-<!-- fzf tag in completions -->
-* [fxf-tab](github.com/Aloxaf/fzf-tab)
-
-<!-- Zsh Vi Mode -->
-* [Zsh Vi Mode](github.com/jeffreytse/zsh-vi-mode)
+<!-- Iosevka font -->
+* [Iosefka](typeof.net/Iosevka)
 
 
 ## NeoVim

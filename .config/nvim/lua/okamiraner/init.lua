@@ -1,7 +1,7 @@
 require('okamiraner.set')
 require('okamiraner.remap')
 local dracula = require('dracula')
-
+require('gitsigns').setup()
 
 dracula.setup({
     colors = {
@@ -36,4 +36,6 @@ dracula.setup({
 })
 
 vim.cmd[[colorscheme dracula-soft]]
-
+vim.cmd [[ autocmd RecordingEnter * set cmdheight=1 ]]
+vim.cmd [[ autocmd RecordingLeave * set cmdheight=0 ]]
+vim.cmd [[ autocmd VimLeave * set guicursor=a:block-blinkon1 ]]

@@ -11,6 +11,8 @@ return require('packer').startup(function(use)
 
     use 'nvim-lua/plenary.nvim'
 
+    use 'norcalli/nvim-colorizer.lua'
+
     use {
         'nvim-telescope/telescope.nvim',
         requires = {
@@ -51,4 +53,22 @@ return require('packer').startup(function(use)
         'ggandor/leap.nvim',
         config = function() require('leap').set_default_keymaps() end
     }
+
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
+
+    use 'mbbill/undotree'
+
+    use 'lewis6991/gitsigns.nvim'
+
+    use 'davidmh/mdx.nvim'
 end)
