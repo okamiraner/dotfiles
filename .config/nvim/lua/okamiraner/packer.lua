@@ -1,74 +1,74 @@
 vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
-    use('wbthomason/packer.nvim')
+  use('wbthomason/packer.nvim')
 
-    use('Mofiqul/dracula.nvim')
+  use('Mofiqul/dracula.nvim')
 
-    use('nvim-treesitter/nvim-treesitter', {
-        run = ':TSUpdate'
-    })
+  use('nvim-treesitter/nvim-treesitter', {
+    run = ':TSUpdate'
+  })
 
-    use 'nvim-lua/plenary.nvim'
+  use 'nvim-lua/plenary.nvim'
 
-    use 'norcalli/nvim-colorizer.lua'
+  use 'norcalli/nvim-colorizer.lua'
 
-    use {
-        'nvim-telescope/telescope.nvim',
-        requires = {
-            {
-                'nvim-lua/plenary.nvim'
-            }
-        }
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {
+      {
+        'nvim-lua/plenary.nvim'
+      }
     }
+  }
 
-    use {
-        'ThePrimeagen/harpoon',
-        branch = 'harpoon2',
-        requires = {
-            {
-                'nvim-lua/plenary.nvim'
-            }
-        }
+  use {
+    'ThePrimeagen/harpoon',
+    branch = 'harpoon2',
+    requires = {
+      {
+        'nvim-lua/plenary.nvim'
+      }
     }
+  }
 
-    use {
-        'VonHeikemen/lsp-zero.nvim',
-        requires = {
-            {'neovim/nvim-lspconfig'},
-            {'williamboman/mason.nvim'},
-            {'williamboman/mason-lspconfig.nvim'},
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lua'},
-            {'L3MON4D3/LuaSnip'},
-            {'rafamadriz/friendly-snippets'},
-        }
+  use {
+    'VonHeikemen/lsp-zero.nvim',
+    requires = {
+      {'neovim/nvim-lspconfig'},
+      {'williamboman/mason.nvim'},
+      {'williamboman/mason-lspconfig.nvim'},
+      {'hrsh7th/nvim-cmp'},
+      {'hrsh7th/cmp-buffer'},
+      {'hrsh7th/cmp-path'},
+      {'hrsh7th/cmp-nvim-lsp'},
+      {'saadparwaiz1/cmp_luasnip'},
+      {'hrsh7th/cmp-nvim-lua'},
+      {'L3MON4D3/LuaSnip'},
+      {'rafamadriz/friendly-snippets'},
     }
+  }
 
-    use {
-        'ggandor/leap.nvim',
-        config = function() require('leap').set_default_keymaps() end
-    }
+  use {
+    'ggandor/leap.nvim',
+    config = function() require('leap').set_default_keymaps() end
+  }
 
-    use {
-        'numToStr/Comment.nvim',
-        config = function()
-            require('Comment').setup()
-        end
-    }
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
 
-    use {
-        "windwp/nvim-autopairs",
-        config = function() require("nvim-autopairs").setup {} end
-    }
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
 
-    use 'mbbill/undotree'
+  use 'mbbill/undotree'
 
-    use 'lewis6991/gitsigns.nvim'
+  use 'lewis6991/gitsigns.nvim'
 
-    use 'davidmh/mdx.nvim'
+  use 'davidmh/mdx.nvim'
 end)

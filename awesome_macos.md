@@ -148,9 +148,6 @@
 <!-- Dracula -->
 * [Dracula](draculatheme.com)
 
-<!-- Flickr (real photo wallpapers) -->
-* [Flickr](flickr.com/explore)
-
 <!-- Iosevka font -->
 * [Iosefka](typeof.net/Iosevka)
 
