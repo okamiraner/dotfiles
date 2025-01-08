@@ -1,6 +1,13 @@
 # Awesome macOS (ﾉ◕ヮ◕)ﾉ ･ﾟ✧
 
 
+## Tweaks
+
+```sh
+defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
+```
+
+
 ## GUI
 
 
